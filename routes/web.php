@@ -10,10 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// use \App\Mail\WelcomeMail;
+// use Illuminate\Support\Facades\Mail;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/email', function () {
+//     Mail::to('email@email.com')->send(new WelcomeMail());
+//     return new WelcomeMail();
+// });
 
 Route::get('todos', 'TodoController@index');
 
